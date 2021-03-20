@@ -1,5 +1,5 @@
 while inotifywait -qq  -e close_write *; 
 do 
 echo "changed"
-git stash save && git push --force origin "stash@{0}:master" && git stash pop
+git add . -q && git commit -m "update" -q && git push -q
 done

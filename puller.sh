@@ -1,5 +1,5 @@
 while true
 do
-  git pull
+  git pull liveshare
   sleep 10
 done
